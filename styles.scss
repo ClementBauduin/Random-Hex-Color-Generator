@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* End of css reset */
+
+  body {
+
+      background-color: rgb(153, 2, 190);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      
+      .container {
+
+          background-color: rgb(0, 187, 0);
+          width: 30%;
+          min-height: 30%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          border: 2px solid white;
+          border-radius: 5px;
+          padding: 2rem;
+          color: white;
+          font-weight: bold;
+
+          .container--hex {
+
+              font-size: 2rem;
+              border: 1px dashed white;
+              width: 50%;
+              text-align: center;
+          }
+
+          .container--button {
+              width: 60%;
+              background-color: black;
+              color: white;
+              border: none;
+              font-size: 1.5rem;
+              padding: 0.7rem 0.5rem;
+              border-radius: 0.3rem;
+
+              &:hover {
+                  cursor: pointer;
+              }
+          }
+      }
+  }
+
+  
